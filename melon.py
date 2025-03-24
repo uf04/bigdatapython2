@@ -29,6 +29,6 @@ for song in songs:
         artist = artist_tag.text.strip()
         melon_chart.append({"title": title, "artist": artist})
 
-# 수집한 데이터 출력 (상위 100개)
+# 수집한 데이터 출력 (상위 100)
 for idx, song in enumerate(melon_chart[:100], start=1):
     print(f"{idx}. {song['title']} - {song['artist']}")
