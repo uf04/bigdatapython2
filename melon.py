@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+import random
 
 # 요청할 URL
 url = "https://www.melon.com/chart/index.htm"
@@ -32,3 +33,7 @@ for song in songs:
 # 수집한 데이터 출력 (상위 100)
 for idx, song in enumerate(melon_chart[:100], start=1):
     print(f"{idx}. {song['title']} - {song['artist']}")
+
+# 멜론 차트 100 중에서 노래 한곡 추천 해주는 서비스 만들기
+ai_song = randome.choice(songs)
+print(f"추천곡은 {ai_song[1]} - {ai_song[2]} 입니다")
