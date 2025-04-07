@@ -35,5 +35,11 @@ for idx, song in enumerate(melon_chart[:100], start=1):
     print(f"{idx}. {song['title']} - {song['artist']}")
 
 # 멜론 차트 100 중에서 노래 한곡 추천 해주는 서비스 만들기
-ai_song = randome.choice(songs)
+ai_song = random.choice(songs)
 print(f"추천곡은 {ai_song[1]} - {ai_song[2]} 입니다")
+
+# 1. 멜론 100곡 출력
+# 2. 멜론 50곡 출력
+# 3. 멜론 10곡 출력
+# 4. AI 추천곡 출력
+# 5. 가수 이름 검색색
