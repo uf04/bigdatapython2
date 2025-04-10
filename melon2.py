@@ -31,11 +31,6 @@ for entry in soup.select('tr.lst50, tr.lst100'):  # 상위 50위 및 100위 목�
 for song in songs:
     print(f"{song[0]}. {song[1]} - {song[2]}")
 
-
-# 멜론 차트 100 중에서 노래 한곡 추천 해주는 서비스 만들기
-ai_song = random.choice(songs)
-print(f"추천곡은 {ai_song[1]} - {ai_song[2]} 입니다.") 
-
 # 1. 멜론 100곡 출력
 # 2. 멜론 50곡 출력
 # 3. 멜론 10곡 출력
@@ -79,7 +74,7 @@ elif n == "4":
 elif n == "5":
     print("가수 이름 검색")
     m = input("가수 이름 입력: ")
-    print(f"당신이 찾는 가수의 곡은? {m}")
+    print(f"당신이 찾는 가수의 곡은?: - {m}")
 # 5를 입력하면 가수 이름 검색할 수 있게 입력창이 또 나와야함
 # 이름을 입력하면 해당 가수 이름의 노래 리스트가 출력
 else:
